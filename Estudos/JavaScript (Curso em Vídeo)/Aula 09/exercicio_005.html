@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 005</title>
+
+    <style>
+        body {
+            background: rgb(102, 170, 247);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+
+</head>
+<body>
+     <h1>Primeiro contato com DOM (Document Object Model)</h1>
+     <p>Este também é meu <strong>primeiro</strong> site utilizando</p>
+     <p><strong>Live Server</strong></p>
+     <div id="msg">O ID desta DIV é a123</div> <!--eu quem defino uma id para um elemento-->
+     <div name="a123">O nome desta DIV é a123</div>
+     <br>
+     <div class="aviao">A classe desta DIV é a123</div>
+     <br>
+     <div id="oa">Vou selecionar este elemento por seu Seletor CSS</div><!--para isto eu preciso de um ID-->
+     <br>
+    <script>
+        //Não é a melhor, mas é o jeito mais simples de se adicionar textos no site
+        window.document.write('Este texto foi adicionado no site utilizando o DOM do JavaScript <br>');
+        window.document.write('URL usando DOM: ' + window.document.URL + '<br>');
+        window.document.write('Charset usando DOM' + window.document.charset + '<br><br>');
+
+        //Selecionando Elementos pela TagName
+        var p1 = window.document.getElementsByTagName('p')[0];
+        //('p') determina que estou selecionando todos os elementos <p> do site
+        //[0] determina que estou selecionando o primeiro elemento <p> do site
+
+        window.document.write('<strong>.innerText</strong> retorna o texto do elemento, mas sem os HTMLs dentro dele: <br>' + p1.innerText + '<br><br>');
+        //.innerText retorna o texto de um elemento, neste caso "Este também é meu primeiro site utilizando o:"
+
+        window.document.write('Para retornar o texto do elemento COM os HTMLs junto, usamos a função <strong>.innerHTML:</strong> <br>' + p1.innerHTML + '<br><br>');
+        //.innerHTML retorna o texto do elemento, mas com os HTMLs dentro dele
+
+        //Utilizando DOM para modificar estilizações
+        p1.style.color = 'red';
+        var body = window.document.body;
+        body.style.background = 'black';
+
+        //Selecionando um Elemento pelo seu ID (eu quem defino o ID)
+        var msg = window.document.getElementById('msg');
+        msg.style.color = 'blue'; //mudando a cor do elemento div com id=msg
+        msg.innerText = 'Este não é o texto original deste elemento!'; //mudando o texto do elemento div com id=msg
+
+        //É possível alterar o texto sem criar variável. Isto é recomendado para quando só se vai utilizar uma vez só:
+        window.document.getElementById('msg').innerHTML = ('Segunda vez alterando o texto deste elemento e desta vez trouxe também o <strong>HTML</strong>!<br><br>');
+
+        //Selecioando um Elemento pelo seu nome (eu quem defino o nome)
+        var a123 = window.document.getElementsByName('a123')[0];
+        a123.innerHTML = 'Reescrevendo esta linha por meio do DOM, selecionando o elemento pelo nome';
+        a123.style.color = 'black';
+        a123.style.background = 'white';
+
+        //Selecionando um Elemento pela sua Classe
+        var aviao = window.document.getElementsByClassName('aviao')[0];
+        aviao.innerText = 'Texto reescrito, selecionando o elemento pela sua classe.';
+        aviao.style.color = 'green';
+
+        //Selecionando um Elemento por meio do Seletor CSS
+        var a = window.document.querySelector('div#oa')//Com querySelector, utilizo a sintaxe do CSS
+        //Toda ID é representada por uma #
+        //Toda Classe é representada por um .
+        a.style.color = 'yellow';
+
+    </script>
+
+</body>
+</html>
