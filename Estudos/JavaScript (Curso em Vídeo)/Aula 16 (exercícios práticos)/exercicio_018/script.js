@@ -15,8 +15,7 @@ Criar um site onde eu possa adicionar números à uma lista, quer será analisad
 let ListaValores = []
 let lista = document.getElementById('lista')
 function adicionar() {
-    let num = Number(document.getElementById('num').value)
-    
+    let num = Number(document.getElementById('num').value) 
     let max = 10
     if (num >= 1 && num <= 100) {
         if (lista.length < max) {
