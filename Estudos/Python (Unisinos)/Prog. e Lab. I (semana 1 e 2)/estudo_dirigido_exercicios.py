@@ -43,12 +43,40 @@ C = altura
 D =
 E = raio
 """
-valorA = float(input("Digite o valor de A: "))
-valorB = float(input("Digite o valor de B: "))
-valorC = float(input("Digite o valor de C: "))
-valorD = float(input("Digite o valor de D: "))
-valorE = float(input("Digite o valor de E: "))
-areaTriangulo
+a = float(input("Digite o valor de A: "))
+b = float(input("Digite o valor de B: "))
+c = float(input("Digite o valor de C: "))
+d = float(input("Digite o valor de D: "))
+e = float(input("Digite o valor de E: "))
+areaTriangulo = (b * c) / 2
+perimetroRetangulo = a + b + c + d
+areaCirculo = 3.14 * (e ** 2)
+print("Área do triângulo:",areaTriangulo)
+print("Perímetro do retângulo:",perimetroRetangulo)
+print("Área do círculo:",areaCirculo)
 
 "Exercício 7"
+notaProva = float(input("Digite a nota da prova: "))
+notaTrabalho = float(input("Digite a nota do trabalho: "))
+notaTeste = float(input("Digite a nota do teste: "))
+notaFinal = (notaProva * 0.6) + (notaTrabalho * 0.3) + (notaTeste * 0.1)
+print("Nota final:",notaFinal)
+
 "Exercício 8"
+print("Olá, vamos calcular sua nota final!")
+pratica = float(input("Começando pelo Grau A, qual sua nota na atividade prática? "))
+teorica = float(input("E na atividade teórica? "))
+
+print("Agora vamos para o Grau B...")
+lab = float(input("Qual sua nota no laboratório? "))
+teste = float(input("E na prova teste? "))
+extraclasse = float(input("E na atividade extraclasse? "))
+
+grauA = (pratica*0.45) + (teorica*0.55)
+grauB = (lab*0.6) + (teste*0.20) + (extraclasse*0.2)
+notaFinal = (grauA*0.33) + (grauB*0.67)
+
+print("Com todos estes dados, temos:")
+print("Grau A:",grauA)
+print("Grau B:",grauB)
+print("Nota final:",notaFinal)
