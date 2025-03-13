@@ -22,7 +22,7 @@ rua = input("Em que rua você mora? ")
 cep = input("Qual o CEP da sua rua? ")
 bairro = input("E por último, em que bairro mora? ")
 print("Rua:",rua,"CEP:",cep,"Bairro:",bairro)
-"""
+
 
 "Exercício 5"
 valor1 = int(input("Digite o valor 1: "))
@@ -36,13 +36,13 @@ print("Soma:",soma)
 print("Produto:",produto)
 
 "Exercício 6"
-"""
+
 A =
 B = base
 C = altura
 D =
 E = raio
-"""
+
 a = float(input("Digite o valor de A: "))
 b = float(input("Digite o valor de B: "))
 c = float(input("Digite o valor de C: "))
@@ -79,4 +79,15 @@ notaFinal = (grauA*0.33) + (grauB*0.67)
 print("Com todos estes dados, temos:")
 print("Grau A:",grauA)
 print("Grau B:",grauB)
-print("Nota final:",notaFinal)
+print("Nota final:",notaFinal)"
+
+"Exercício Avançado 1"
+a = float(input("Digite o valor de A: "))
+b = int(input("Digite o valor de B: "))
+print("A multiplicado por B é", a * b)
+print("A dividido por B é", a / b)
+print("A mais B é", a + b, "e A menos B é", a - b)
+print("A elevado a B é", a ** b)
+"""
+
+"Exercício Avançado 2"
