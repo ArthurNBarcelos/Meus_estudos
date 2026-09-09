@@ -1,4 +1,28 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
     background-color:darkslategray;
     color:white;
+}
+
+div {
+    h1 {
+        padding-top: 50px;
+    }
+    a {
+        
+        text-decoration: none;
+        color: black;
+        &:hover {
+            text-decoration: underline;
+            background-color: black;
+            color: white;
+        }
+    }
+    color: black;
+    background-color: white;
+    width: 700px;
+    height: 700px;
+    margin: auto;
 }
