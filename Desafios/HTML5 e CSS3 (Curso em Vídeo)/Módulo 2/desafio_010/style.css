@@ -10,68 +10,67 @@
 }
 
 body {
+    margin: auto;
     background-color: #ebe5c5;
-    margin: 0;
-}
-
-header {
-    background-image: linear-gradient(to bottom, #2fa866, #063d1e);
-    color: white;
-    h1 {
-        font-family: 'bebas neue', sans-serif;
-        text-align: center;
-        margin: 0;
-    }
-    p {
-        text-align: center;
-    }
-    a {
-        text-align: left;
-        color: #83e1ad;
-        text-decoration: none;
-        &:hover {
-            background-color: #2fa866;
-            color: #063d1e;
+    header {
+        background-image: linear-gradient(to bottom, #2fa866, #063d1e);
+        color: white;
+        h1 {
+            margin: auto;
+            text-align: center;
+            font-family: 'bebas neue', Arial, Helvetica, sans-serif;
+        }
+        p {
+            text-align: center;
+        }
+        a {
+            color: #83e1ad;
+            text-align: left;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
-}
-
-main {
-    background-color: white;
-    margin: auto;
-    h1,h2 {
-    font-family: 'idroid', sans-serif;
-    font-weight: normal;
+    main {
+        background-color: white;
+        h1 {
+            font-family: 'idroid', Arial, Helvetica, sans-serif;
+            color: #063d1e;
+            margin: 0;
+        }
+        h2 {
+            font-family: 'idroid', Arial, Helvetica, sans-serif;
+            color: #1a5c37;
+        }
+        p {
+            text-align: justify;
+            text-indent: 30px;
+        }
+        source,img {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+        div#video {
+            background-color: #063d1e;
+            iframe {
+                display: block;
+                margin: auto;
+                width: 100%;
+            }
+        }
     }
-    h1 {
-        margin: 0;
-        color:#063d1e
-    }
-    h2 {
-        color: #1a5c37;
-        background-image: linear-gradient(to right, #83e1ad, transparent);
-    }
-    p {
-        text-align: justify;
-    }
-    strong {
-        color: #1a5c37;
-    }
-}
-
-footer {
-    font-size: 0.75em;
-    color: white;
-    text-align: center;
-    background-color: #063d1e;
-    padding: 5px;
-    a {
-        font-weight: bold;
+    footer {
+        background-color: #063d1e;
         color: white;
-        text-decoration: none;
-        &:hover {
-            color: #83e1ad;
-            text-decoration: underline;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                color: #83e1ad;
+            }
         }
     }
 }
