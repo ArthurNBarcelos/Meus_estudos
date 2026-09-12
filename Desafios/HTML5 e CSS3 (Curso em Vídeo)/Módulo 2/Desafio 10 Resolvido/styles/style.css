@@ -29,6 +29,10 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -58,9 +62,8 @@ header > p {
 }
 
 nav {
-    background-color: red;
     min-height: 20px;
-    /*background-color: var(--cor5);*/
+    background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 }
@@ -77,7 +80,6 @@ nav > a {
 nav > a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
-    font-size: 1.05em;
 }
 
 
@@ -141,7 +143,42 @@ main img.pequena {
     margin: auto;
 }
 
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*n é compativel com todos navegadores. 00A0 = espaço*/
+    list-style-position: inside;
+    columns: 2;
+}
+
 footer {
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
