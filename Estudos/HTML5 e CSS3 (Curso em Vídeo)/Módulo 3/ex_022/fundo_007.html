@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Sincronização Vertical</title>
+    <style>
+        #secao {
+            height: 96vh;
+            padding: 10px;
+
+            background-color: purple;
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+        }
+        #artigo {
+            height: 300px;
+            width: 600px;
+
+            background-color: yellow;
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="secao">
+        <article id="artigo">
+
+        </article>
+    </section>
+</body>
+</html>
