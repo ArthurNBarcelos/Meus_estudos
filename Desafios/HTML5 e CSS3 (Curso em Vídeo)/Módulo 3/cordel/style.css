@@ -35,9 +35,44 @@ header {
 }
 
 main {    
-    p {
+    section {
         font: normal normal 3.5vw var(--font_paragraph);
         line-height: 2em;
         padding: 100px 30px;
+        padding-bottom: 150px;
+    }
+    .destacado {
+        background-color: rgba(0, 0, 0, 0.500);
+        color: white;
+        width: max-content;
+        padding: 10px;
+        text-shadow: 1px 1px 1px black;
+    }
+    .imgfundo {
+        box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.250);;
+    }
+    #imgfundo_1 {
+        background: green url(images/background001.jpg) no-repeat center right / cover fixed;
+
+        /*background: color image repeat position / size attachment*/
+    }
+    #imgfundo_2 {
+        background: gray url(images/background002.jpg) no-repeat center center / cover fixed;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
