@@ -8,26 +8,40 @@
 <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastros.js" method="GET" autocomplete="on">
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required placeholder="nome completo" autocomplete="name" maxlength="30">
-        </p>
-        <p>
-            <label for="imedia">Média:</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
-        </p>
-        <p>
-            <label for="imes">Período Letivo:</label>
-            <input type="month" name="mes" id="imes" required>
-        </p>
-        <p>
-            <label for="idia">Dia da prova:</label>
-            <input type="date" name="dia" id="idia" required value="2026-10-13">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Resetar">
-        </p>
+        <fieldset>
+            <legend>Sexo</legend> <!-- input:radio devem ter o msm name-->
+            <input type="radio" name="sexo" id="sexom" value="M" required> <label for="sexom">Masculino</label>
+            <input type="radio" name="sexo" id="sexof" value="F" required> <label for="sexof">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbasq" id="iesbasq"> <label for="iesbasq">Basquete</label> <br>
+            <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Vôlei</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Dadantes</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="nome completo" autocomplete="name" maxlength="30">
+            </p>
+            <p>
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+            </p>
+            <p>
+                <label for="imes">Período Letivo:</label>
+                <input type="month" name="mes" id="imes" required>
+            </p>
+            <p>
+                <label for="idia">Dia da prova:</label>
+                <input type="date" name="dia" id="idia" required value="2026-10-13">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
