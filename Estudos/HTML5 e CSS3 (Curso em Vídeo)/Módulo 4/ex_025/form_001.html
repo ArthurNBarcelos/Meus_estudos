@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+
+    <!--
+        Método GET: dados pela URL
+            Dados não sensíveis e links compartilháveis
+            Limite: 3000 caracteres
+        Método POST: dados não visíveis na URL, mas não seguros
+            Dados sensíveis e links não compartilháveis (usando HTTPS)
+            Dados com +3k caracteres
+    -->
+    <form action="cadastros.js" method="GET" autocomplete="off">
+        <!--JavaScript usa principalmente ID p comunicar-->
+        <p>
+            <label for="inome">Nome:</label>
+            <!--Label: indica ao navegador a relação entre o input e o texto-->
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
