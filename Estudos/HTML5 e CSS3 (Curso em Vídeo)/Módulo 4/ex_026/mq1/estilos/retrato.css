@@ -1,2 +1,6 @@
 @charset "UTF-8";
 /* RETRATO */
+
+body {
+    background-color: blue;
+}
