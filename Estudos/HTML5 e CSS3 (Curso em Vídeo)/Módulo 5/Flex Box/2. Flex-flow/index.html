@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: #ccc;
+            height: 70vh;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center; /*align-items: stretch (padrão)*/
+        }
+        div.item{
+            background-color: #f00;
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+            height: 100px;
+            margin: 5px;
+
+            display: flex;
+            align-items: center;
+
+            &&:hover{
+                background-color: #0f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">AaAaAa</div>
+        <div class="item">BbBbBb</div>
+        <div class="item">CcCcCc</div>
+        <div class="item">DdDdDd</div>
+        <div class="item">EeEeEe</div>
+        <div class="item">FfFfFf</div>
+        <div class="item">GgGgGg</div>
+    </div>
+</body>
+</html>
